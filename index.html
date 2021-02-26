@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="style.css" rel="stylesheet">
+    <title>Flip Game</title>
+    </head>
+    <script type="text/javascript" src="game.js"></script>
+
+    <body>
+        <h1 class="page-title">🐟🐟</h1>
+        <div class="overlay-text visible">
+            开始
+        </div>
+        <div id="game-over-text" class="overlay-text">
+            傻傻傻🐟
+            <span class="overlay-text-small">勉强再给一次机会吧</span>
+        </div>
+        <div id="victory-text" class="overlay-text">
+            嘻嘻嘻超聪明
+            <span class="overlay-text-small">再来一次嘛</span>
+        </div>
+        <div class="game-container">
+            <div class="game-info-container">
+                <div class="game-info">
+                    Time <span id="time-remaining">40</span>
+                </div>
+                <div class="game-info">
+                    Flips <span id="flips">0</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3144.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3145.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3147.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3144.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3146.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3147.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3148.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3148.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3149.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3145.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3146.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3150.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3150.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3151.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3149.JPG" width="140" height="185">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="spider" src="resources/pics/IMG_1858.JPG" width="140" height="185">
+                </div>
+                <div class="card-front card-face">
+                    <img class="cob-web cob-web-top-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-top-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-left" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="cob-web cob-web-bottom-right" src="https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Images/CobwebGrey.png">
+                    <img class="card-value" src="resources/pics/IMG_3151.JPG" width="140" height="185">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
