@@ -1,4 +1,4 @@
 # happyBirthday-
-# 🐟🐟 ❤️ ^3^
+# 🐟🐟 ^3^
 
 https://dakotadong.github.io/happyBirthday-/.
